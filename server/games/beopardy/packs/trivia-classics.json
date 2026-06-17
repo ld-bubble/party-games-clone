@@ -1,0 +1,47 @@
+{
+  "id": "trivia-classics",
+  "title": "Trivia Classics",
+  "categories": [
+    {
+      "name": "World Capitals",
+      "clues": [
+        { "value": 200, "clue": "The 'City of Light', home to the Eiffel Tower.", "answer": "Paris" },
+        { "value": 400, "clue": "Formerly called Edo, it anchors the world's most populous metro area.", "answer": "Tokyo" },
+        { "value": 600, "clue": "Canada's capital — no, it's not Toronto.", "answer": "Ottawa" },
+        { "value": 800, "clue": "This Ethiopian capital's name means 'new flower' in Amharic.", "answer": "Addis Ababa" }
+      ]
+    },
+    {
+      "name": "Famous Movie Lines",
+      "clues": [
+        { "value": 200, "clue": "'May the Force be with you' comes from this 1977 space saga.", "answer": "Star Wars" },
+        { "value": 400, "clue": "'Here's looking at you, kid' — this 1942 classic set in Morocco.", "answer": "Casablanca" },
+        { "value": 600, "clue": "'I'll be back' was first promised in this 1984 sci-fi film.", "answer": "The Terminator" },
+        { "value": 800, "clue": "'You can't handle the truth!' is shouted in this 1992 courtroom drama.", "answer": "A Few Good Men" }
+      ]
+    },
+    {
+      "name": "Animal Kingdom",
+      "clues": [
+        { "value": 200, "clue": "The tallest land animal on Earth.", "answer": "Giraffe" },
+        { "value": 400, "clue": "This black-and-white bear's diet is about 99% bamboo.", "answer": "Giant panda" },
+        { "value": 600, "clue": "The only mammal capable of true, sustained flight.", "answer": "Bat" },
+        { "value": 800, "clue": "This eight-armed cephalopod has three hearts and blue blood.", "answer": "Octopus" }
+      ]
+    },
+    {
+      "name": "Tech Acronyms",
+      "clues": [
+        { "value": 200, "clue": "The 'S' in HTTPS stands for this.", "answer": "Secure" },
+        { "value": 400, "clue": "CPU is short for this three-word term.", "answer": "Central Processing Unit" },
+        { "value": 600, "clue": "In 'API', the 'I' stands for this.", "answer": "Interface" },
+        { "value": 800, "clue": "The 'L' in both HTML and XML stands for this.", "answer": "Language" }
+      ]
+    }
+  ],
+  "final": {
+    "category": "Tech History",
+    "clue": "Founded in a Menlo Park garage in 1998 by two Stanford PhD students, this company's search engine originally ran under the name 'BackRub'.",
+    "answer": "Google"
+  }
+}

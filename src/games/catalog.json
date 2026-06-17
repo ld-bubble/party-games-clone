@@ -1,0 +1,56 @@
+[
+  {
+    "id": "wheel",
+    "name": "Random Picker",
+    "blurb": "Spin the wheel to pick who goes next. Everyone's a slice.",
+    "emoji": "🎡",
+    "accent": "#7c5cff",
+    "minPlayers": 2,
+    "status": "live"
+  },
+  {
+    "id": "disordered",
+    "name": "Disordered Order",
+    "blurb": "Crack the hidden emoji order — we only tell you how many sit in the right spot.",
+    "emoji": "🔀",
+    "accent": "#3ba9ff",
+    "minPlayers": 1,
+    "status": "live"
+  },
+  {
+    "id": "beopardy",
+    "name": "Beopardy",
+    "blurb": "Buzz in from your phone. Daily Doubles, Final Beopardy, zero lawsuits.",
+    "emoji": "🧠",
+    "accent": "#ffb020",
+    "minPlayers": 2,
+    "status": "live"
+  },
+  {
+    "id": "two-truths",
+    "name": "Two Truths & a Lie",
+    "blurb": "Submit three statements, the room guesses the lie.",
+    "emoji": "🕵️",
+    "accent": "#ff7a59",
+    "minPlayers": 3,
+    "status": "live"
+  },
+  {
+    "id": "punchline",
+    "name": "Punchline",
+    "blurb": "One prompt. Your funniest answer. The room votes.",
+    "emoji": "🎤",
+    "accent": "#ff5c8a",
+    "minPlayers": 3,
+    "status": "live"
+  },
+  {
+    "id": "buzzword-bingo",
+    "name": "Buzzword Bingo",
+    "blurb": "Mark the buzzwords as they get dropped. First to a line wins.",
+    "emoji": "🟦",
+    "accent": "#19c37d",
+    "minPlayers": 2,
+    "status": "soon"
+  }
+]
