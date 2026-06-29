@@ -52,6 +52,7 @@ export default function Home() {
             Fork our repo!
           </a>
           <button
+            type="button"
             onClick={dismissBanner}
             aria-label="Dismiss banner"
             className="absolute right-3 top-1/2 -translate-y-1/2 rounded p-1 text-violet-400 transition hover:text-white"
