@@ -34,10 +34,7 @@
 }
 
 /* Light theme readability: the landing page uses light-on-dark utility
-   colors, so darken text and surfaces when the light theme is active. */
-:root[data-theme="light"] body {
-  --tw-text-opacity: 1;
-}
+   colors, so darken text when the light theme is active. */
 :root[data-theme="light"] [class*="text-violet-100"],
 :root[data-theme="light"] [class*="text-violet-200"],
 :root[data-theme="light"] [class*="text-violet-300"] {
