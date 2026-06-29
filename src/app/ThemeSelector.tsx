@@ -32,6 +32,7 @@ export default function ThemeSelector() {
   }, []);
 
   function pick(next: Theme) {
+    console.log(`[ThemeSelector] switching to theme: "${next}"`);
     setTheme(next);
     applyTheme(next);
     localStorage.setItem(THEME_KEY, next);
