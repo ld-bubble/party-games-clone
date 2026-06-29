@@ -13,8 +13,7 @@ export default function Home() {
     return sessionStorage.getItem("forkBannerDismissed") !== "true";
   });
 
-  function dismissBanner(e: React.MouseEvent) {
-    e.preventDefault();
+  function dismissBanner() {
     sessionStorage.setItem("forkBannerDismissed", "true");
     setBannerVisible(false);
   }
