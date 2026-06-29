@@ -8,15 +8,6 @@ import { makeRoomCode } from "@/lib/code";
 export default function Home() {
   const router = useRouter();
   const [joinCode, setJoinCode] = useState("");
-  const [bannerVisible, setBannerVisible] = useState(() => {
-    if (typeof window === "undefined") return true;
-    return sessionStorage.getItem("forkBannerDismissed") !== "true";
-  });
-
-  function dismissBanner() {
-    sessionStorage.setItem("forkBannerDismissed", "true");
-    setBannerVisible(false);
-  }
 
   function startGame(gameId: string) {
     const code = makeRoomCode();
