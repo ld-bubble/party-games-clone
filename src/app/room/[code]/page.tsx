@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { getSocket, type Member, type RoomState } from "@/lib/socket";
@@ -9,7 +9,8 @@ import { GAME_COMPONENTS } from "@/games/registry";
 
 const NAME_KEY = "party-games:name";
 
-export default function RoomPage({ params }: { params: { code: string } }) {
+// Inner component uses useSearchParams() — must be inside a Suspense boundary.
+function RoomPageInner({ params }: { params: { code: string } }) {
   const code = params.code.toUpperCase();
   const searchParams = useSearchParams();
   const requestedGame = searchParams.get("game") || undefined;
