@@ -178,3 +178,11 @@ function RoomPageInner({ params }: { params: { code: string } }) {
     </main>
   );
 }
+
+export default function RoomPage({ params }: { params: { code: string } }) {
+  return (
+    <Suspense fallback={null}>
+      <RoomPageInner params={params} />
+    </Suspense>
+  );
+}
