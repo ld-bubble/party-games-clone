@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { GAMES } from "@/games/catalog";
 import { makeRoomCode } from "@/lib/code";
+import ThemeSelector from "./ThemeSelector";
 
 export default function Home() {
   const router = useRouter();
