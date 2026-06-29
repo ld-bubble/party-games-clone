@@ -3,8 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0d0b1a;
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Dark theme (default) */
+  --bg: #0d0b1a;
+  --fg: #f5f3ff;
+  --bg-image:
+    radial-gradient(1200px 600px at 80% -10%, rgba(124, 92, 255, 0.25), transparent 60%),
+    radial-gradient(900px 500px at 0% 110%, rgba(255, 122, 89, 0.18), transparent 55%);
+}
+
+/* Light theme */
+:root[data-theme="light"] {
+  --bg: #f4f2fb;
+  --fg: #1b1830;
+  --bg-image:
+    radial-gradient(1200px 600px at 80% -10%, rgba(124, 92, 255, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 0% 110%, rgba(255, 122, 89, 0.12), transparent 55%);
+}
+
+/* Crazy retro theme */
+:root[data-theme="retro"] {
+  --bg: #1a0033;
+  --fg: #fdf6ff;
+  --bg-image:
+    repeating-linear-gradient(45deg, rgba(255, 0, 196, 0.12) 0, rgba(255, 0, 196, 0.12) 20px, transparent 20px, transparent 40px),
+    radial-gradient(1000px 500px at 90% -10%, rgba(0, 255, 213, 0.35), transparent 55%),
+    radial-gradient(900px 500px at 0% 110%, rgba(255, 213, 0, 0.3), transparent 55%),
+    linear-gradient(160deg, rgba(255, 0, 196, 0.25), transparent 70%);
 }
 
 html,
@@ -14,10 +40,9 @@ body {
 }
 
 body {
-  color: #f5f3ff;
+  color: var(--fg);
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(124, 92, 255, 0.25), transparent 60%),
-    radial-gradient(900px 500px at 0% 110%, rgba(255, 122, 89, 0.18), transparent 55%),
+    var(--bg-image),
     var(--bg);
   min-height: 100vh;
 }
