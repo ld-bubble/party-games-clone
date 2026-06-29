@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       {bannerVisible && (
-        <div className="relative flex w-full items-center justify-center border-b border-violet-500/40 bg-gradient-to-r from-indigo-950 via-violet-900 to-purple-950 shadow-[0_2px_24px_0_rgba(139,92,246,0.35)]">
+        <div className="relative flex w-full items-center justify-center border-b border-violet-500/70 bg-gradient-to-r from-indigo-950 via-violet-900 to-purple-950 shadow-[0_1px_0_0_rgba(167,139,250,0.6),0_2px_16px_2px_rgba(139,92,246,0.55),0_4px_32px_4px_rgba(139,92,246,0.25)]">
           <a
             href="https://github.com/ld-bubble/party-games-clone"
             target="_blank"
