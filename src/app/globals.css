@@ -33,6 +33,20 @@
     linear-gradient(160deg, rgba(255, 0, 196, 0.25), transparent 70%);
 }
 
+/* Light theme readability: the landing page uses light-on-dark utility
+   colors, so darken text and surfaces when the light theme is active. */
+:root[data-theme="light"] body {
+  --tw-text-opacity: 1;
+}
+:root[data-theme="light"] [class*="text-violet-100"],
+:root[data-theme="light"] [class*="text-violet-200"],
+:root[data-theme="light"] [class*="text-violet-300"] {
+  color: rgba(76, 29, 149, 0.85);
+}
+:root[data-theme="light"] .text-white {
+  color: #1b1830;
+}
+
 html,
 body {
   max-width: 100vw;
