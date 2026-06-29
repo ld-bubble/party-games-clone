@@ -37,22 +37,36 @@ export default function ThemeSelector() {
     localStorage.setItem(THEME_KEY, next);
   }
 
+  function throwDebugError() {
+    console.error("[ThemeSelector] Debug error button clicked", {
+      currentTheme: theme,
+    });
+  }
+
   return (
-    <div className="mx-auto mb-10 flex max-w-md items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 p-1">
-      {THEMES.map((t) => (
-        <button
-          key={t.id}
-          onClick={() => pick(t.id)}
-          className={`flex-1 rounded-full px-3 py-1.5 text-sm font-semibold transition ${
-            theme === t.id
-              ? "bg-white/20 text-white"
-              : "text-violet-100/60 hover:bg-white/10"
-          }`}
-        >
-          <span className="mr-1">{t.emoji}</span>
-          {t.label}
-        </button>
-      ))}
+    <div className="mx-auto mb-10 flex max-w-md flex-col items-center gap-2">
+      <div className="flex w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 p-1">
+        {THEMES.map((t) => (
+          <button
+            key={t.id}
+            onClick={() => pick(t.id)}
+            className={`flex-1 rounded-full px-3 py-1.5 text-sm font-semibold transition ${
+              theme === t.id
+                ? "bg-white/20 text-white"
+                : "text-violet-100/60 hover:bg-white/10"
+            }`}
+          >
+            <span className="mr-1">{t.emoji}</span>
+            {t.label}
+          </button>
+        ))}
+      </div>
+      <button
+        onClick={throwDebugError}
+        className="rounded-full border border-red-500/40 bg-red-500/10 px-4 py-1.5 text-xs font-semibold text-red-400 transition hover:bg-red-500/20"
+      >
+        🐛 Debug: throw console error
+      </button>
     </div>
   );
 }
