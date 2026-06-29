@@ -38,7 +38,7 @@ export default function Home() {
             href="https://github.com/ld-bubble/party-games-clone"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2.5 px-4 py-2.5 text-sm font-semibold text-violet-200 transition hover:text-white"
+            className="flex items-center justify-center gap-2.5 px-4 py-2.5 text-sm font-semibold text-violet-200 transition hover:text-white hover:drop-shadow-[0_0_8px_rgba(216,180,254,0.8)]"
           >
             {/* GitHub mark SVG icon */}
             <svg
